@@ -22,6 +22,10 @@ def stopwatch():
         if counter <= 1:
             rosta_times = rosta_times + str(round(elapsed_time, 2)) + ", "
             counter += 1
+            
+            if input2 == "q":
+                break
+
             continue
 
         if counter == 2 or counter == 3:
